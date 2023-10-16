@@ -232,7 +232,7 @@ const CompanionForm: React.FC<CompanionFormProps> = ({
             <div>
               <h3 className="text-lg font-medium">Configuration</h3>
               <p className="text-sm text-muted-foreground ">
-                Detailed Instructions for AI's behaviour
+                Detailed Instructions for AI&apos;s behaviour
               </p>
             </div>
             <Separator className="bg-primary/10" />
