@@ -6,6 +6,8 @@ import { Separator } from "@/shadcn-ui/ui/separator";
 const SettingsPage = async () => {
   const isPro = await checkSubscription();
 
+  console.log({ isPro });
+
   return (
     <div className="h-full p-4 space-y-3 ml-2">
       <h1 className="text-2xl font-medium">Settings</h1>

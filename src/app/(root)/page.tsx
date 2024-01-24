@@ -15,9 +15,8 @@ const RootPage = async ({ searchParams }: RootPageProps) => {
   const data = await prismaDB.companion.findMany({
     where: {
       categoryId: searchParams.categoryId,
-      name: searchParams.name,
+      name: searchParams.name
     },
-
     orderBy: {
       createdAt: "desc",
     },

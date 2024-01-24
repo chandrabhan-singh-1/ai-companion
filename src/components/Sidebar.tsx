@@ -47,8 +47,8 @@ const Sidebar = ({ isPro }: SidebarProps) => {
 
   return (
     <main className="space-y-4 flex flex-col justify-center items-center h-full text-primary bg-secondary mx-auto">
-      <section className="flex p-1  flex-1 justify-items-center">
-        <section className=" space-y-2">
+      <section className="flex flex-1 p-1 justify-items-center">
+        <section className="space-y-2">
           {routes.map((route) => (
             <article
               key={route.href}

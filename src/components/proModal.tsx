@@ -25,10 +25,6 @@ export const ProModal = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
-
   const onSubscribe = async () => {
     try {
       setLoading(true);
@@ -43,6 +39,10 @@ export const ProModal = () => {
       setLoading(false);
     }
   };
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <Dialog open={proModal.isOpen} onOpenChange={proModal.onClose}>

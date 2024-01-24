@@ -22,6 +22,7 @@ interface NavbarProps {
 
 const Navbar = ({ isPro }: NavbarProps) => {
   const [mounted, setMounted] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const proModal = useProModal();
 
@@ -35,7 +36,10 @@ const Navbar = ({ isPro }: NavbarProps) => {
 
   return (
     <div className="fixed h-16 w-full z-20 flex justify-between items-center py-2 px-3 border-b border-primary/20 bg-secondary">
-      <div className="flex items-center ">
+      <div
+        className="flex items
+      -center "
+      >
         <MobileSidebar isPro={isPro} />
         <Link href={"/"}>
           <h1
@@ -48,7 +52,7 @@ const Navbar = ({ isPro }: NavbarProps) => {
           </h1>
         </Link>
       </div>
-      <div className="flex items-center gap-x-3 ">
+      <div className="flex items-center gap-x-3">
         <ThemeToggler />
         {!isPro && (
           <Button
